@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="business.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Itim&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&family=Sigmar&family=Slabo+27px&family=Wendy+One&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Itim&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&family=Sigmar&family=Slabo+27px&family=Wendy+One&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="bimg/logo.png" alt="">
+        </div>
+        <div class="nav-left">
+            <a href="#">Personal</a>
+            <a href="#" class="active">Business</a>
+            <a href="#">Plateform</a>
+        </div>
+        <div class="nav-right">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Help</a>
+            <a href="#">Login in</a>
+            <button>Register</button>
+        </div>
+        <div class="hamburger-menu" onclick="toggleNav()">
+            &#9776;
+        </div>
+    </header>
+    <section class="main-sec">
+        <h1>Take your business <span id="up-text"> to new places </span> </h1>
+        <p>Sign up for the fast, easy international business account that saves you money wherever you want to use it</p>
+        <button class="main-btn">Create account</button>
+        <button class="main-btns">Contact sales</button>
+        <img src="bimg/first.png" alt="">
+    </section>
+    <section class="account-sec">
+        <div class="ac-text">
+            <div class="left-sec">
+            <h1>Accounts that help you get paid faster</h1>
+            <p>Set up local account details for your business in any of 8 currencies. Then let overseas customers use them to pay you from wherever they are – at the same speed as someone who’s just across town.</p>
+            <button class="paid-btn">Explore faster ways to get paid</button>
+        </div>
+            <div class="right-sec">
+                <img src="bimg/two.png" alt="">
+                <p id="t-text">* Transaction speeds may vary based on circumstance.</p>
+                <p id="l-text">** Exchange rate illustrative only, please use below calculator for current rates.</p>
+            </div>
+        </div>
+    </section>
+     <section>
+        <div class="payment-sec">
+            <div class="l-sec">
+                <img src="bimg/gdp.png" alt="">
+            </div>
+            <div class="r-sec">
+                <h1>Payments with more bang for your baht, yen and euro</h1>
+                <p>Make international payments easily with Wise. Choose from 70+ countries and pay overseas staff or suppliers, with <span id="d-text"><b>  no hidden fees or exchange rate markups.</b></span></p>
+                <button class="pay-btn">Pay invoices</button>
+                <button class="view-btn">View pricing</button>
+            </div>
+            <div class="few-sec">
+                <div class="f-sec">
+                <img src="bimg/t.png" alt="">
+                <h1 class="f-text"><b>Authorised financial services provider</b></h1>
+            </div>
+            <div class="f-sec">
+                <img src="bimg/key.png" alt="">
+                <h1 class="def-text">Used by 300,000+ businesses each quarter</h1>
+            </div>
+            <div class="f-sec">
+                <img src="bimg/home.png" alt="">
+                <h1 class="la-text"><b>Funds safeguarded in line with FCA regulations</b></h1>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="cradit-sec">
+            <div class="l-c-sec">
+                <img src="bimg/cards.png" alt="">
+            </div>
+            <div class="r-t-sec">
+                <h1>40+ currencies. 160+ countries. All in one card</h1>
+                <p>Give your team business debit cards to use overseas without foreign currency transaction fees. Set spending limits on each card. Plus get 0.5% cash back as you spend.</p>
+                <button class="btn-1">Explore business debit cards</button>
+                <button class="btn-2">View pricing</button>
+            </div>
+        </div>
+    </section> 
+    <section>
+        <div class="soft-sec">
+            <div class="t-sec">
+            <h1>Works with the software that works for you</h1>
+            <p>Easily connect to your favourite accounting software and save time on admin. Choose from Xero, QuickBooks, FreeAgent and more.</p>
+            <button>View apps and software</button>
+        </div>
+        <div class="i-sec">
+            <img src="bimg/lady.png" alt="">
+        </div>
+        </div>
+    </section>
+    <section class="level-sec">
+        <div class="up-div">
+            <img src="bimg/level.png" alt="">
+        </div>
+        <div class="give-text">
+            <h1>Give your business a boost</h1>
+            <p>When you use Interest, your money is put in a fund that invests in government-guaranteed assets. Spend whenever you’d like, all while you grow. Capital at risk - growth not guaranteed.</p>
+            <button>Learn how Wise interest work</button>
+        </div>
+    </section>
+    <section>
+        <div class="card-head">
+            <h1>More ways we can help your business</h1>
+        </div>
+        <div class="all-card">
+            <img src="bimg/b-card.png" id="img-1">
+            <img src="bimg/s-card.png" id="img-2">
+            <img src="bimg/your-card.png" id="img-3">
+            <img src="bimg/bottel-card.png" id="img-4">
+        </div>
+    </section>
+    <section>
+        <div class="d-sec">
+            <div id="di-text">
+            <h1>Disappoint thieves</h1>
+            <p>Wise helps 16 million people move £9 billion every month — here’s how we make sure it’s safe.</p>
+            <button>Learn how we product your money</button>
+        </div>
+        <div class="img-sec">
+            <img src="bimg/lock.png" alt="">
+        </div>
+        <div class="main-start">
+        <div class="main-bimg">
+            <div class="a-sec">
+                <img src="bimg/t.png" alt="">
+                <h1 class="a-text"><b>Our dedicated fraud and security teams work to keep your money safe</b></h1>
+            </div>
+            <div class="b-sec">
+                <img src="bimg/key.png" alt="">
+                <h1 class="b-text">We use 2-factor authentication to protect your account</h1>
+            </div>
+            <div class="c-sec">
+                <img src="bimg/home.png" alt="">
+                <h1 class="c-text"><b>We hold your money with established financial institutions</b></h1>
+            </div>
+        </div>
+    </div>
+        </div>
+    </section>
+    <section id="stars-sec">
+        <div class="main-h">
+            <h1 class="n-text">DON'T TAKE OUR WORD FOR IT</h1>
+            <p>With 180,000+ Trustpilot reviews, our average score is 4.3 out of 5.</p>
+        </div>
+        <div class="three-boxes">
+        <div class="box">
+            <img src="bimg/stars.png" alt="">
+            <p><b>“Doing an overseas business and banking through Wise is the best combination indeed.”</b></p>
+            <p id="n-text">---- Mohamad Alkabbani</p>
+        </div>
+        <div class="box">
+            <img src="bimg/stars.png" alt="">
+            <p><b>“I love how I can use my Wise account 
+                to pay any American contractors that I have...”</b></p>
+            <p id="n-text">---- Mike Vardy</p>
+        </div>
+        <div class="box">
+            <img src="bimg/stars.png" alt="">
+            <p><b> "...would confidently recommend it to anyone looking for a cost-effective way to transfer money internationally.”</b></p>
+            <p id="n-text">---- Andrew</p>
+        </div>
+    </div>
+    <button class="last-btn">Read more Trustpilot reviews</button>
+    </section>
+    <section>
+        <div class="poster-sec">
+            <img src="bimg/no.png" alt="sihirs">
+        </div>
+    </section>
+    <section class="last-sec">
+        <div class="do-sec">
+            <h1>DO BUSINESS WITHOUT BORDERS</h1>
+            <p>We're building the best way to move and manage the world’s money. So that you can do business without borders. Min fees. Max ease. Full speed.</p>
+        </div>
+        <div class="un-sec">
+            <img src="bimg/two person.png" alt="iwuewfi">
+            <p><b>The Wise Business account is the ultimate way to manage money globally. It’s made for the world. And it’s built to save you money and time, so you can spend more time focusing on growing your business.</b></p>
+            <button class="learn-btn">Learn about our Mission</button>
+        </div>
+        <div class="ut-sec">
+            <div class="last-left">
+            <img src="bimg/one.png" alt="">
+        </div>
+            <div class="last-right">
+            <h1>Believe in an open world</h1>
+            <p>The world is richer when money has no borders. Your ideas fuel the Mission Roadmap that’s getting us there — tell us what you want to see.</p>
+            <button>View our Mission Roadmap</button>
+        </div>
+        </div>
+    </section> 
+
+    <script>
+        // Toggle the menu on mobile view
+    function toggleNav() {
+        const navLeft = document.querySelector('.nav-left');
+        const navRight = document.querySelector('.nav-right');
+        
+        navLeft.classList.toggle('active');
+        navRight.classList.toggle('active');
+    }
+    </script>
+    
+</body>
+</html>
