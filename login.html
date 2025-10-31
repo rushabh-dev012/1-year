@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "poppins", sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 780px;
+            background-size: cover;
+            background-image: url(login-bg.png);
+            background-position: center;
+        }
+        .main-sec{
+            width: 420px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            backdrop-filter: blur(4px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .8) ;
+            color: white;
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+        .main-sec h1{
+            font-size: 36px;
+            text-align: center;
+        }
+        .main-sec .input-box{
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+        .input-box input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: #333 !important;
+            padding-left: 20px;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, .6);
+            border-radius: 40px;
+            color: #fff;
+            padding: 20px, 45px 20px 20px;
+        }
+        .input-box input::placeholder{
+            color: #fff;
+            padding-left: 1px;
+        }
+        .input-box i{
+            position: absolute;
+           margin-top: 15px;
+           margin-left: -30px;
+            font-size: 20px;
+        }
+        .input-box i{
+            color: #fff;
+        }
+        .main-sec .remember-forget{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+        .remember-forget label input{
+            accent-color: #fff;
+            margin-right: 3px;
+        }
+        .remember-forget a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .remember-forget a:hover{
+            text-decoration: underline;
+        }
+        .main-sec .btn{
+            width: 100%;
+            height: 45px;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+            cursor: pointer;
+            font-size: 16px;
+            background: none;
+            color: #fdfbfb;
+            font-weight: 600;
+        }   
+        .main-sec .btn:active{
+            transform: scale(0.98);
+        }
+        .main-sec .first-link{
+            font-size: 14.5px;
+            text-align: center;
+            margin: 20px 0 15px;
+        }
+        .first-link p a{
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .first-link p a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div class="main-sec">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forget">
+                <label> <input type="checkbox">Remember me</label>
+                <a href="#">forget password?</a>
+            </div>
+            <button class="btn" type="submit">Login</button>
+            <div class="first-link">
+                <p>Don`t have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
