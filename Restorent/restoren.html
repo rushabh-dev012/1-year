@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slabo+27px&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cedarville+Cursive&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slabo+27px&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cedarville+Cursive&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Itim&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slabo+27px&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cedarville+Cursive&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Itim&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slabo+27px&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Itim&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slabo+27px&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Itim&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slabo+27px&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(
+            rgba(2, 6, 74, 0.747),
+            rgba(2, 6, 74, 0.747)
+          ),
+          url(img/bg-hero.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 10px 8%;
+      }
+      nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0;
+      }
+      .logo {
+        width: 180px;
+        cursor: pointer;
+      }
+      nav ul {
+        list-style: none;
+        width: 100%;
+        text-align: right;
+        padding-right: 60px;
+      }
+      nav ul li {
+        display: inline-block;
+        margin: 10px 15px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      .btn {
+        /* display: flex; */
+        white-space: pre;
+        font-size: 16px;
+        color: white;
+        margin-left: -25px;
+        align-items: center;
+        padding: 10px 40px;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        background: #ffa200;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .container h1 {
+        font-size: 50px;
+        margin-right: 920px;
+        position: absolute;
+        font-family: "Cedarville Cursive";
+        color: #ffa200;
+      }
+      .container i {
+        font-size: 50px;
+        justify-content: space-between;
+        margin-right: 1170px;
+        position: absolute;
+        color: #ffa200;
+      }
+      .our-sec h1 {
+        font-family: "Itim", cursive;
+        margin-top: 150px;
+        font-size: 60px;
+        width: 36%;
+        color: white;
+        position: relative;
+      }
+      .our-sec p {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 40%;
+        line-height: 24px;
+        margin-top: 10px;
+        color: white;
+      }
+      .our-sec button {
+        width: 17%;
+        font-size: 15px;
+        text-transform: uppercase;
+        height: 45px;
+        background-color: #ffa200;
+        color: white;
+        margin-top: 20px;
+        border: none;
+      }
+      .our-sec button:hover {
+        background-color: #fdb539;
+        cursor: pointer;
+      }
+      .pen-sec img {
+        width: 40%;
+        margin-top: -35%;
+        margin-left: 56%;
+        animation: rotate 45s infinite linear;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .card-sec {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 500px;
+        background-color: rgb(244, 242, 242);
+      }
+      .card-sec i {
+        font-size: 40px;
+        padding-top: 30px;
+        padding-left: 25px;
+        color: #ffa200;
+      }
+      .card-sec h1 {
+        padding-left: 25px;
+        padding-top: 9px;
+        font-family: "Itim", cursive;
+      }
+      .card-sec p {
+        padding-left: 25px;
+        color: rgb(114, 114, 114);
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #ca:hover {
+        background-color: #ffa200;
+        color: white;
+        transform: 0.3s;
+      }
+      #cb:hover {
+        background-color: #ffa200;
+        color: white;
+        transform: 0.3s;
+      }
+      #cc:hover {
+        background-color: #ffa200;
+        color: white;
+        transform: 0.3s;
+      }
+      #cd:hover {
+        background-color: #ffa200;
+        color: white;
+        transform: 0.3s;
+      }
+      /* #ca i:hover{
+                color: white;
+            } */
+      #ca {
+        margin-top: 60px;
+        width: 16%;
+        background-color: white;
+        transition-duration: 0.4s;
+        height: 240px;
+      }
+      #cb {
+        background-color: white;
+        margin-top: 60px;
+        transition-duration: 0.4s;
+        width: 16%;
+        height: 240px;
+      }
+      #cc {
+        background-color: white;
+        margin-top: 60px;
+        width: 16%;
+        transition-duration: 0.4s;
+        height: 240px;
+      }
+      #cd {
+        background-color: white;
+        margin-top: 60px;
+        width: 16%;
+        transition-duration: 0.4s;
+        height: 240px;
+      }
+      .ai {
+        width: 18%;
+        border-radius: 4px;
+        margin-top: 120px;
+        margin-left: 10%;
+      }
+      .bi {
+        width: 15%;
+        /* margin-top: 120px; */
+        margin-left: 368px;
+        margin-top: -29% !important;
+        border-radius: 4px;
+      }
+      .ci {
+        width: 15%;
+        margin-top: 8px;
+        border-radius: 4px;
+        margin-left: 13%;
+      }
+      .di {
+        width: 18%;
+        margin-top: -192px;
+        margin-left: 368px;
+        border-radius: 4px;
+      }
+      .main-div {
+        margin-top: -20px;
+      }
+      .side-sec {
+        margin-top: -38%;
+        margin-left: 50%;
+      }
+      .side-sec h2 {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-size: 31px;
+        font-style: normal;
+        color: #ffa200;
+      }
+      .to-sec {
+        font-family: "Itim", cursive;
+        font-size: 21px;
+      }
+      .to-sec i {
+        color: #ffa200;
+      }
+      .to-sec p {
+        width: 70%;
+        margin-top: 9px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 25px;
+        color: #717274;
+      }
+      #p-s {
+        
+        padding-top: 10px;
+      }
+      .horizontal-line {
+        width: 1.8mm;
+        height: 2cm;
+        margin-top: 29px;
+        background-color: #ffa200; /* Change color as needed */
+        display: inline-block;
+      }
+      .cl-sec h1 {
+        margin-top: -12%;
+        color: #ffa200;
+        margin-left: 28px;
+        font-size: 52px;
+      }
+      .cl-sec p {
+        margin-top: -57px;
+        white-space: pre;
+        margin-left: 107px;
+      }
+      .ex-sec {
+        color: #000000;
+        font-weight: 700;
+      }
+      .horizontal {
+        width: 1.8mm;
+        height: 2cm;
+        margin-top: -600% !important;
+        margin-left: 36%;
+        background-color: #ffa200; /* Change color as needed */
+        display: inline-block;
+      }
+      .sec-div {
+        margin-top: -13%;
+        margin-left: 255px;
+        color: #ffa200;
+        font-size: 52px;
+      }
+      .sec-p {
+        margin-left: 345px;
+        font-size: 16px !important;
+        width: 2% !important;
+        margin-top: -10% !important;
+      }
+      .more-sec {
+        margin-top: 30px;
+        width: 30%;
+        height: 56px;
+        background-color: #ffa200;
+        border: none;
+        color: white;
+        font-size: 15px;
+        border-radius: 2px;
+      }
+      .more-sec:hover {
+        background-color: #fdb539;
+        cursor: pointer;
+      }
+      .food-sec {
+        margin-top: 120px;
+      }
+      .food-sec h2 {
+        text-align: center;
+        font-family: "Pacifico", cursive;
+        color: #ffa200;
+        margin-top: 10px;
+      }
+      .food-sec h1 {
+        text-align: center;
+        padding-top: 16px;
+        font-family: "Itim", cursive;
+        font-size: 47px;
+      }
+      .i-sec {
+        font-size: 40px;
+        margin-left: 45%;
+        margin-top: 40px;
+      }
+      .aa-sec {
+        margin-left: -30%;
+      }
+      .f-p {
+        font-size: 17px;
+        padding-left: 51px;
+        margin-top: -4% !important;
+        white-space: pre;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #717274;
+      }
+      .ab-sec{
+        margin-left: 10px;
+        margin-top: -6%;
+      }
+      .s-p{
+        font-size: 17px;
+        color: #717274;
+        padding-left: 51px;
+        margin-top: -43px;
+        font-family: Arial, Helvetica, sans-serif;
+        white-space: pre;
+      }
+      .ac-sec{
+        margin-left: 180px;
+        margin-top: -7%;
+      }
+      .t-p{
+        font-size: 17px;
+        color: #717274;
+        padding-left: 58px;
+        margin-top: -43px;
+        font-family: Arial, Helvetica, sans-serif;
+        white-space: pre;
+      }
+      .aa-sec i{
+        color: #ffa200;
+      }
+      .ab-sec i{
+        color: #ffa200;
+      }
+      .ac-sec i{
+        color: #ffa200;
+      }
+      #backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 15px 20px;
+        background-color: #ffa200;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: opacity 0.3s;
+      }
+
+      #backToTop:hover {
+        background-color: #fdb539;
+      }
+      .line-sec{
+        margin-top: 30px;
+        margin-left: 26%;
+        color: #abacae;
+        width: 46%;
+      }
+      .f-four{
+        margin-left: 130px;
+      }
+      .a-c{
+        margin-top: 6%;
+      }
+      .f-h{
+        padding-left: 100px;
+        padding-top: -30% !important;
+      }
+      .hr-sec{
+        width: 40%;
+      }
+      .h-sec{
+        width: 50%;
+      }
+      .s-h{
+        padding-left: 340px;
+        bottom: -40px;
+      }
+      .s-four{
+        margin-left: 54%;
+        margin-top: -61%;
+      }
+      .f-four img{
+        margin-top: 40px;
+        margin-top: 30px;
+      }
+      .s-four img{
+        margin-top: 33px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <i class="fa-solid fa-utensils" class="logo"></i>
+        <h1>Restoran</h1>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">service</a></li>
+          <li><a href="#">menu</a></li>
+          <li><a href="#">pages</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+        <button class="btn">book a table</button>
+      </nav>
+      <div class="our-sec">
+        <h1>Enjoy Our Delicious Meal</h1>
+        <p>
+          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+          diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+          lorem sit clita duo justo magna dolore erat amet
+        </p>
+        <button>book a table</button>
+      </div>
+      <div class="pen-sec">
+        <img src="img/hero.png" alt="" />
+      </div>
+    </div>
+    <section>
+      <div class="card-sec">
+        <div id="ca">
+          <i class="fa-solid fa-user-ninja"></i>
+          <h1>Master Chefs</h1>
+          <p>
+            Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+            diam
+          </p>
+        </div>
+        <div id="cb">
+          <i class="fa-solid fa-utensils"></i>
+          <h1>Quality Food</h1>
+          <p>
+            Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+            diam
+          </p>
+        </div>
+        <div id="cc">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h1>Online Order</h1>
+          <p>
+            Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+            diam
+          </p>
+        </div>
+        <div id="cd">
+          <i class="fa-solid fa-headphones"></i>
+          <h1>24/7 Service</h1>
+          <p>
+            Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
+            diam
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="about-sec">
+      <div>
+        <img src="img/about-1.jpg" class="ai" />
+      </div>
+      <div class="main-div">
+        <img src="img/about-2.jpg" class="bi" />
+      </div>
+      <div>
+        <img src="img/about-3.jpg" class="ci" />
+      </div>
+      <div>
+        <img src="img/about-4.jpg" class="di" />
+      </div>
+      <div class="side-sec">
+        <h2>about us ⎯⎯⎯</h2>
+        <div class="to-sec">
+          <h1>Welcome to <i class="fa-solid fa-utensils"></i> Restoran</h1>
+          <p>
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem
+            sit.
+          </p>
+          <p id="p-s">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+            lorem sit clita duo justo magna dolore erat amet
+          </p>
+          <div class="horizontal-line"></div>
+          <div class="cl-sec">
+            <h1 id="fh">15</h1>
+            <p id="fp">Years of <span class="ex-sec">
+Experience</span></p>
+          </div>
+          <div class="horizontal"></div>
+          <h1 class="sec-div">50</h1>
+          <p class="sec-p">Popular <span class="ex-sec">Master Chefs</span></p>
+          <button class="more-sec">READ MORE</button>
+        </div>
+      </div>
+    </div>
+    <section class="food-sec">
+      <h2>⎯⎯⎯ Food Menu ⎯⎯⎯</h2>
+      <h1>Most Popular Items</h1>
+      <div class="i-sec">
+        <div class="aa-sec">
+          <i class="fa-solid fa-mug-hot"></i>
+          <p class="f-p">Popular 
+<b style="color: black;">Breakfast</b></p>
+        </div>
+        <div class="ab-sec">
+          <i class="fa-solid fa-burger"></i>
+          <p class="s-p">Special
+<b style="color: black;">Launch</b></p>
+        </div>
+        <div class="ac-sec">
+          <i class="fa-solid fa-utensils"></i>
+          <p class="t-p">Lovely
+<b style="color: black;">Dinner</b></p>
+        </div>
+      </div>
+      <hr class="line-sec">
+    </section>
+
+    <!-- ---------- menu sec ST ---------- -->
+    <section class="chiken-sec">
+      <main class="f-four">
+        <div class="a-c">
+            <img src="img/menu-1.jpg" alt="">
+            <h2 class="f-h">Chicken Burger</h2>
+            <h2 class="s-h">$115</h2>
+            <hr class="hr-sec">
+            <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+        </div>
+        <div class="b-c">
+            <img src="img/menu-2.jpg" alt="">
+            <h2 class="f-h">Chicken Burger</h2>
+            <h2 class="s-h">$115</h2>
+            <hr class="hr-sec">
+            <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+        </div>
+        <div class="c-c">
+            <img src="img/menu-3.jpg" alt="">
+            <h2 class="f-h">Chicken Burger</h2>
+            <h2 class="s-h">$115</h2>
+            <hr class="hr-sec">
+            <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+        </div>
+        <div class="d-c">
+            <img src="img/menu-4.jpg" alt="">
+            <h2 class="f-h">Chicken Burger</h2>
+            <h2 class="s-h">$115</h2>
+            <hr class="hr-sec">
+            <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+        </div>
+      </main>
+      <main class="s-four">
+        <div class="e-c">
+            <img src="img/menu-5.jpg" alt="">
+            <h2 class="f-h">Chicken Burger</h2>
+            <h2 class="s-h">$115</h2>
+            <hr class="h-sec">
+            <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+        </div>
+        <div class="f-c">
+            <img src="img/menu-6.jpg" alt="">
+            <h2 class="f-h">Chicken Burger</h2>
+            <h2 class="s-h">$115</h2>
+            <hr class="h-sec">
+            <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+        </div>
+        <div class="g-c">
+            <img src="img/menu-7.jpg" alt="">
+            <h2 class="f-h">Chicken Burger</h2>
+            <h2 class="s-h">$115</h2>
+            <hr class="h-sec">
+            <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+        </div>
+        <div class="h-c">
+            <img src="img/menu-8.jpg" alt="">
+            <h2 class="f-h">Chicken Burger</h2>
+            <h2 class="s-h">$115</h2>
+            <hr class="h-sec">
+            <p>Ipsum ipsum clita erat amet dolor justo diam</p>
+        </div>
+      </main>
+    </section>
+    <!-- ---------- menu sec ED ---------- -->
+
+    <!-- :::::::::: M A I N B U T T O N :::::::::: -->
+
+    <button id="backToTop" style="display: none">
+      <span style="font-size: 20px">↑</span>
+    </button>
+
+     <!-- :::::::::: M A I N B U T T O N :::::::::: -->
+
+
+
+    <!-- ////////// S C R I P T \\\\\\\\\\ -->
+    <script>
+      const backToTopButton = document.getElementById("backToTop");
+
+      // Show button when scrolling down
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 250 ||
+          document.documentElement.scrollTop > 250
+        ) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      };
+      // Smooth scroll to top
+      backToTopButton.onclick = function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      };
+    </script>
+  </body>
+</html>
