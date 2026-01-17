@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            width: 100%;
+            height: 500px;
+            background-image: url(images/slider-bg.jpg);
+        }
+        .logo{
+            float: left;
+            line-height: 90px;
+            color: white;
+            padding-top: 30px;
+            padding-left: 40px;
+        }
+        .container {
+  display: inline-block;
+  cursor: pointer;  
+  padding-left: 83% !important;
+  margin-top: 50px;
+  position: fixed;
+  
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+  
+}
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+.box{
+    width: 40%;
+    height: 200px;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    top: 20%;
+    align-items: center;
+    color: black;
+}
+.mian-text{
+
+}
+.main-per{
+
+}
+.button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  width: 30%;
+  height: 35px;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.button1:hover {
+  background-color: rgb(36, 46, 119);
+  color: white;
+}
+.about_sec{
+  height: 500px;
+    margin-top: 50px;
+    float: left;
+    border-radius: 3px;
+    margin-right: 19px;
+}
+.about-text_sec{
+    margin-top: 40px;
+    
+}
+.about-text_sec h1{
+
+}
+.about-text_sec p{
+
+}
+.button2 {
+  background-color: #0e478b;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+
+}
+
+.button2 {
+  background-color: white; 
+  color: black !important; 
+  width: 40%;
+  height: 50px;
+  border: 2px solid #0e478b;
+  transition: 0.5s;
+}
+
+.button2:hover {
+  background-color: #0e478b;
+  color: white !important;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.button3 {
+  background-color: #0e478b;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+
+}
+
+.button4 {
+  background-color: white; 
+  color: black !important; 
+  width: 40%;
+  height: 50px;
+  border: 2px solid #dc3545;
+  transition: 0.5s;
+}
+
+.button4:hover {
+  background-color: #dc3545;
+  color: white !important;
+}
+.view_section{
+  width: 1000%;
+  height: 100px;
+  background-color: ghostwhite;
+  
+}
+.container-fluid{
+  
+  
+}
+.navbar_container navbar_center{
+  
+
+}
+.home_sec{
+  width: 100%;
+  height: 400px;
+  background-color: #333;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column5 {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button6 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.button6:hover {
+  background-color:  #dc3545;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.latest-text_sec{
+  width: 50%;
+  height: 260px;
+  background-color: ghostwhite;
+}
+.heading-text{
+  padding-top: 60px;
+}
+.button7{
+  margin-top: 19px !important;
+  background-color:  #081641;
+  border: none;
+  color: white;
+  padding: 7px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button7:hover{
+  background-color: white;
+  color: black;
+  border: 1.5px solid #081641;
+}
+input{
+  width: 90%;
+  margin: 10px;
+  padding: 21px;
+  border-radius: 8px;
+  border: none;
+  color: #333;
+}
+.button9{
+  width: 20%;
+  height: 40px;
+  margin-left: 57px;
+  margin-top: 20px;
+}
+.button9{
+  margin-top: 19px !important;
+  background-color:   #e13f12;
+  border: none;
+  color: white;
+  padding: 7px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: 60px;
+}
+.button9:hover{
+  background-color: #11284e;
+  color:  #e13f12;
+  border: 1.5px solid #e13f12;
+}
+.subscribe_sec{
+  padding-top: 180px;
+}
+.button10{
+  margin-top: 19px !important;
+  background-color:   #11284e;
+  border: 2px solid #11284e;
+  color: white;
+  padding: 7px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: 60px;
+}
+.button10:hover{
+  background-color: white;
+  color:  #11284e;
+  
+  
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>SHAPEL</h2>
+        </div>
+        <div class="img">
+        </div>
+        <div class="container" onclick="myFunction(this)" style="float: left;">
+            <div class="bar1"></div>    
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          
+          <script>
+          function myFunction(x) {
+            x.classList.toggle("change");
+          }
+          </script>
+          <div class="box">
+            <div class="child">
+                <h2 class="main-text">HK CLASSES</h2>
+                <br>
+                <h3 class="main-per">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore sequi ducimus esse non repudiandae, quod eaque, cumque consequuntur error aut dolores ex temporibus ut est tempora eligendi incidunt. Adipisci!</h3>
+                <br>
+                <button class="button1">contact us</button>
+            </div>
+          </div>
+    </header>
+    <div>
+        <div class="about_sec">
+            <img src="images/about-img.jpg" alt="images"  width="500" height="400">
+        </div>
+        <div class="about-text_sec" style="width: 40%; float: right;margin-top: 130px; margin-right: 150px;">
+            <h1>ABOUT US</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis exercitationem cum temporibus, ut rem ad velit incidunt obcaecati corrupti, a dicta expedita reprehenderit corporis quisquam maiores, repudiandae commodi! Itaque, dolores?</p>
+            <br>
+            <button class="button2">Read More</button>
+        </div>
+    </div>
+    <div class="gallery_section layout_padding2">
+      <div class="container-fluid">
+        <div class="heading_container heading_center" style="width: 100%; height: 120px; background-color: ghostwhite; display: flex; top: 20px; font-size: 30px;">
+          <h2 style="padding-left:45%; margin-top: 40px;">
+            Gallery
+          </h2>
+        </div>
+        <!-- Header -->
+<div class="header">
+  
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="images/g1.jpg" style="width:200%">
+    <img src="images/s2.jpg" style="width:100%">
+    
+
+  
+    
+  </div>
+  <div class="column">
+    <img src="images/s1.jpg" style="width:200%">
+
+  </div>  
+  <div class="column">
+    <img src="images/s3.jpg" style="width:100%">
+    <img src="images/g2.jpg" style="width:100%">
+
+  </div>
+  <div class="column">
+    <img src="images/g3.jpg" style=" width: 100%;">
+  </div>
+  <div class="view_section ">
+    <div class="container-fluid">
+      <div class="navbar_container navbar_center">
+        <button  class="button3 button4" style="width: 20%; position: relative; top: 50%; left: 46%;">
+          View All
+        </button>
+      </div> 
+      <div style="padding-left:42%; margin-top: 10%; font-size: 27px;">
+        <h2>SERVICES</h2>
+        <br><br>
+      </div>
+    <div class="row2" style="margin-top: -1%; ">
+      <div class="column5" style="text-align: justify;">
+        <div class="card">
+          <img src="images/s1.jpg" alt="Jane" style="width:100%; border-radius: 80%;  height: auto;">
+          <h3>Residential Decoration</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero mollitia ad doloribus esse molestiae possimus cum sunt veniam dolore! Repellendus, maiores! Eos commodi dolores repudiandae deleniti odio possimus eveniet modi.</p>
+            <p><button class="button6">Read More</button6></p>
+        </div>
+      </div>
+    
+      <div class="column5">
+        <div class="card">
+          <img src="images/s2.jpg" alt="Mike" style="width:100%; border-radius: 80%; height: 430px; ">
+            <h3>Ecommercial Decoration</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quaerat fugiat, odit ipsam voluptate, doloremque, ut laboriosam recusandae quia beatae sapiente mollitia ratione earum nisi? Reprehenderit eos aperiam officiis ratione.</p>
+            <p> <button class="button6">Read More</button></p>
+        </div>
+      </div>
+      
+      <div class="column5">
+        <div class="card">
+          <img src="images/s3.jpg" alt="John" style="width:100%; border-radius: 80%;  height: auto;">
+            <h3 style="text-align: justify;">Office Decoration</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, dolores, illum est modi itaque quo esse expedita assumenda doloremque perspiciatis explicabo eveniet fuga soluta nostrum sapiente voluptate id nisi aspernatur.</p>
+            <p> <button class="button6">Read More</button></p>
+      </div>
+    </div>
+    <header4>
+      <div style=" margin-bottom: -20% ;  font-size: 27px; width: 100%; height: 500px; display: flex;   padding-left: 38%; padding-top: 10%; ">
+        <h2>LATEST BLOG</h2>
+      </div>
+      <div class="main-img2">
+          <img src="images/b1.jpg" width="19%" style="padding-bottom: 10%px; height: 20%; float: left; padding-bottom: 120px; border: 2px solid white; margin-right: 15px;">
+      </div>
+      <div class="latest-text_sec">
+          <h3 class="heading-text">Velit tempora molestias quae</h3>
+          <p style="margin-top: 10px; word-spacing: 2px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perspiciatis similique error rerum provident repellat a dolor molestias repellendus.</p>
+          <button class="button7">Read More</button>
+      </div>
+        <img src="images/b2.jpg" width="19%" style="float: right;">
+    </div> 
+    <div class="latest-text_sec" style="float: right; width: 31%;">
+        <h3 class="heading-text">Velit tempora molestias quae</h3>
+        <p style="margin-top: 10px; word-spacing: 2px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perspiciatis similique error rerum provident repellat a dolor molestias repellendus.</p>
+        <button class="button7" style="margin-left: 20px;">Read More</button>
+    </div>
+    </div>
+    </header4>
+    <div class="header5">
+        <div style="margin-top: 30%; margin-left: 40%;">
+            <h1>TESTIMONIAL</h1>
+        </div>
+        <div class="box5">
+            <img src="images/client.jpg" style="border-radius: 50%; width: 170px;margin-top: 70px; margin-left: 90px; float: left; border: 9px solid white;">
+        </div>
+        <h3 style="margin-top: 170px;">Siaalya</h3>
+          <p style="width: 90%; height: 200px; background-color: #0f2360; color: white; margin-left: 50px; margin-bottom: 27%; padding-top: 80px; width: 80%; padding-left: 40px; margin-left: 40px; align-items: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem deleniti autem corporis itaque dignissimos sed fugit ipsum explicabo, aliquam, adipisci optio iste obcaecati, assumenda laboriosam doloremque quaerat quibusdam accusamus Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eveniet debitis odio deleniti quibusdam, magni, error voluptatem consequatur consequuntur aut unde at? Sed iste corrupti facere eum cum, amet illo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore atque quod in totam eum impedit, rem ipsum possimus reprehenderit pariatur? Alias ipsum cupiditate impedit molestiae officiis quia quaerat</p>
+    </div>
+  <from class="contact" style="padding-top: 50px;">
+    <div class="from2" style="width: 44%; height: 675px; background-color: #11284e; padding-top: 80px; margin-left: 48px; float: left;">
+      <h1 style="padding-left: 60px; color: white;">CONTACT US</h1>
+ <div class="from-box">
+      <div class="form-group" style="margin-left: 50px; margin-top: 20px;">
+        <input type="name" placeholder="Your Name" >
+      </div>
+      <div class="form-group" style="margin-left: 50px;  margin-top: 20px;">
+        <input type="number" placeholder="Phone Number" >
+      </div>
+      <div class="form-group" style="margin-left: 50px;  margin-top: 20px;">
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="form-group" style="margin-left: 50px;  margin-top: 20px;">
+        <input type="name"placeholder="Message" style="height: 140px;">
+      </div>
+      <button class="button9">SEND</button>
+    </div>
+  </div>
+  </from>
+  <div class="subscribe_sec">
+  <h1 style="padding-bottom: 40px; margin-left: 40px;">SUBSCRIBE TO OUR NEWSLETTER</h1>
+  <P style="padding-bottom: 7px; padding-right: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda id ipsam maiores inventore fugiat excepturi, sint molestiae in deleniti adipisci, fuga ex doloribus unde harum quo dolore rerum consectetur laudantium.</P>
+  <div class="enter_sec" style="border: none;">
+  <input type="name" placeholder="Enter your email" style="width: 50%; background-color: rgb(227, 227, 227);">
+  </div>
+  <button  class="button10" style="width: 15%; height: 40px; margin-left: 50px; margin-top: 30px;">SUBSCRIBE</button>
+</div>
+</body>
+</html>
