@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slabo+27px&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slabo+27px&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        height: 800px;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url(img/yoga-header.jpg);
+        background-size: cover;
+      }
+      header p {
+        color: white;
+        font-family: "poppins", "sans-serif";
+      }
+      hr {
+        width: 70%;
+        margin-top: 16px !important;
+        margin: auto;
+        color: rgb(97, 90, 90);
+      }
+      .first {
+        padding-left: 180px;
+        padding-top: 80px;
+        position: absolute;
+        /* position: relative; */
+      }
+      .mid {
+        text-align: center;
+        padding-top: 30px;
+      }
+      .second {
+        padding-left: 75.5%;
+        margin-top: -2%;
+        position: absolute;
+      }
+      .un-sec {
+        color: white;
+        text-align: center;
+        padding-top: 17%;
+      }
+      .un-sec h1 {
+        padding-bottom: 30px;
+        font-family: "Kanit";
+        font-size: 50px;
+      }
+      .un-sec button {
+        margin-top: 30px;
+        width: 15%;
+        height: 47px;
+        font-size: 21px;
+        font-weight: 600;
+        color: white;
+        background-color: #ff99e6;
+        border-radius: 5px;
+        border: none;
+      }
+      .un-sec button:hover {
+        color: #6666ff;
+      }
+      .type1 {
+        text-align: center;
+        color: #6666ff;
+        padding-top: 40px;
+        font-size: 40px;
+        font-family: "Exo 2";
+      }
+      .type2 {
+        text-align: center;
+        font-family: "poppins", "sans-serif";
+        padding-top: 30px;
+      }
+      .main {
+        display: flex;
+      }
+      .png1 {
+        position: relative;
+        margin-top: 6%;
+        margin-left: 80px;
+      }
+      .png2 {
+        margin-left: 70px !important;
+        margin-top: 7.5% !important;
+        position: relative;
+      }
+      .png3 {
+        margin-left: 60px;
+        margin-top: 6%;
+        position: relative;
+      }
+      .png1 img {
+        padding-left: 74px;
+      }
+      .png2 img {
+        padding-left: 74px;
+      }
+      .png3 img {
+        padding-left: 74px;
+      }
+      .png1 h1 {
+        padding-left: 34px;
+        padding-bottom: 10px;
+        font-family: "Zilla Slab";
+      }
+      .png2 h1 {
+        padding-left: 18px;
+        padding-bottom: 10px;
+        font-family: "Zilla Slab";
+      }
+      .png3 h1 {
+        padding-left: 34px;
+        padding-bottom: 10px;
+        font-family: "Zilla Slab";
+      }
+      .png1 p {
+        width: 60%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .png2 p {
+        width: 60%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .png3 p {
+        width: 60%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main h1:hover {
+        color: #ff99e6;
+      }
+      .center-sec {
+        width: 62%;
+        height: 530px;
+        background-image: url(img/the-best-class-yoga.jpg);
+        margin-top: 10%;
+        margin-left: 38%;
+      }
+      .sec-sec {
+        width: 38%;
+        margin-top: -42%;
+        height: 530px;
+        background-color: rgb(242, 242, 247);
+      }
+      #p1 {
+        margin-top: -10px !important;
+      }
+      .sec-sec {
+        font-size: 26px;
+        color: #6666ff;
+        font-family: "Zilla Slab";
+        padding-left: 73px;
+        padding-top: 50px;
+      }
+      .sec-sec p {
+        color: rgb(110, 109, 109);
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 30px;
+        line-height: 27px;
+      }
+      .ad-sec {
+        margin-top: 60px;
+        text-align: center;
+      }
+      .ad-sec h1 {
+        color: #6666ff;
+        font-size: 40px;
+        font-family: "Zilla Slab";
+      }
+      .ad-sec p {
+        color: rgb(110, 109, 109);
+        font-family: "poppins", "sans-serif";
+        padding-top: 10px;
+      }
+      .girl-sec img {
+        width: 100%;
+      }
+      .mind-sec {
+        margin-top: -47%;
+        font-family: "Josefin Sans";
+      }
+      .mind-sec h1 {
+        padding-left: 25%;
+        padding-bottom: 10px;
+        color: rgb(63, 62, 62);
+      }
+      .mind-sec h1:hover {
+        color: #ff99e6;
+      }
+      .mind-sec p {
+        width: 40%;
+        justify-content: flex-end;
+        padding-left: 25%;
+        color: rgb(110, 109, 109);
+      }
+      .good-sec h1 {
+        padding-left: 20%;
+        font-family: "Josefin Sans";
+        padding-top: 50px;
+        padding-bottom: 10px;
+        color: rgb(63, 62, 62);
+      }
+      .good-sec h1:hover {
+        color: #ff99e6;
+      }
+      .good-sec p {
+        width: 38%;
+        font-family: "Josefin Sans";
+        justify-content: flex-end;
+        padding-left: 20%;
+        color: rgb(110, 109, 109);
+      }
+      .and-sec h1 {
+        padding-left: 13%;
+        font-family: "Josefin Sans";
+        padding-top: 50px;
+        padding-bottom: 10px;
+        color: rgb(63, 62, 62);
+      }
+      .and-sec h1:hover {
+        color: #ff99e6;
+      }
+      .and-sec p {
+        width: 30%;
+        font-family: "Josefin Sans";
+        justify-content: flex-end;
+        padding-left: 13%;
+        color: rgb(110, 109, 109);
+      }
+      .real-sec {
+        margin-left: 66%;
+        margin-top: -30%;
+        color: rgb(63, 62, 62);
+        font-family: "Josefin Sans";
+      }
+      .real-sec h1 {
+        width: 40%;
+        padding-bottom: 10px;
+      }
+      .real-sec p {
+        color: rgb(110, 109, 109);
+        width: 40%;
+      }
+      .you-sec h1 {
+        padding-bottom: 10px;
+      }
+      .you-sec {
+        margin-left: 69%;
+        margin-top: 60px;
+        font-family: "Josefin Sans";
+        color: rgb(63, 62, 62);
+      }
+      .you-sec p {
+        color: rgb(110, 109, 109);
+        width: 45%;
+      }
+      .class-sec {
+        margin-top: 61px;
+        font-family: "Josefin Sans";
+        margin-left: 70%;
+      }
+      .class-sec h1 {
+        color: rgb(63, 62, 62);
+        font-family: "Josefin Sans";
+        padding-bottom: 10px;
+      }
+      .class-sec P {
+        width: 48%;
+        color: rgb(110, 109, 109);
+      }
+      .our-sec {
+        margin-top: 10%;
+        width: 100%;
+        height: 600px;
+        background-color: rgb(232, 232, 232);
+      }
+      .our-sec h1 {
+        font-size: 36px;
+        color: #6666ff;
+        padding-top: 12%;
+        text-align: center;
+        font-family: "Zilla Slab";
+      }
+      .our-sec p {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 10px;
+        text-align: center;
+      }
+      .all-sec {
+        display: flex;
+        margin-top: -20%;
+        margin-left: 30px;
+      }
+      .all-sec img {
+        border-radius: 50%;
+        width: 25%;
+        margin-left: 100px;
+      }
+      .all-sec h1 {
+        font-family: "Josefin Sans";
+        font-size: 25px;
+        font-weight: 600;
+        padding-left: 30px;
+      }
+      .all-sec h1:hover {
+        color: #ff99e6;
+      }
+      .all-sec p {
+        color: rgb(110, 109, 109);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .a-sec img {
+        width: 40%;
+      }
+      .a-sec h1 {
+        margin-left: 28px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .a-sec p {
+        text-align: center;
+        width: 80%;
+        padding-left: 37px;
+      }
+      .b-sec img {
+        width: 38%;
+      }
+      .b-sec h1 {
+        margin-left: 43px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+      }
+      .b-sec p {
+        text-align: center;
+        width: 80%;
+        padding-left: 37px;
+      }
+      .c-sec img {
+        width: 38%;
+      }
+      .c-sec h1 {
+        margin-left: 36px;
+        padding-bottom: 10px;
+      }
+      .c-sec p {
+        text-align: center;
+        width: 80%;
+        padding-left: 37px;
+      }
+      .d-sec {
+        margin-top: 5px;
+      }
+      .d-sec img {
+        width: 30%;
+      }
+      .d-sec h1 {
+        margin-left: 36px;
+        padding-bottom: 10px;
+      }
+      .d-sec p {
+        text-align: center;
+        width: 67%;
+        padding-left: 43px;
+      }
+      .form-sec {
+        margin-top: 10%;
+      }
+      .form-sec h1 {
+        text-align: center;
+        font-size: 27px;
+        font-size: 30px;
+        color: #6666ff;
+        font-family: "Zilla Slab";
+      }
+      .form-sec p {
+        color: rgb(110, 109, 109);
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 10px;
+      }
+      .make-sec {
+        border: 1px solid black;
+        width: 45%;
+        height: 570px;
+        margin-left: 30px;
+        margin-top: 70px;
+      }
+      #ai {
+        margin-left: 40px;
+        margin-top: 40px;
+        width: 33%;
+        height: 40px;
+        padding-left: 15px;
+      }
+      #bi {
+        margin-left: 320px;
+        padding-top: -60px !important;
+        width: 33%;
+        height: 40px;
+        padding-left: 15px;
+      }
+      .bi {
+        margin-top: -43px;
+      }
+      #ci {
+        margin-top: 25px;
+        width: 33%;
+        height: 40px;
+        padding-left: 15px;
+        margin-left: 40px;
+      }
+      .di {
+        margin-left: 56%;
+        margin-top: -7%;
+      }
+      #di {
+        width: 75%;
+        padding-left: 15px;
+        height: 40px;
+      }
+      .ei {
+        margin-left: 40px;
+        margin-top: 25px;
+      }
+      #ei {
+        width: 35%;
+        height: 40px;
+        padding-left: 15px;
+      }
+      .fi {
+        margin-left: 56%;
+        margin-top: -7%;
+      }
+      #fi {
+        width: 75%;
+        padding-left: 15px;
+        height: 40px;
+      }
+      .mi {
+        margin-top: 25px;
+        margin-left: 35px;
+      }
+      #mi {
+        width: 88%;
+        padding-left: 15px;
+        height: 150px;
+        padding-top: 10px;
+      }
+      .fb {
+        margin-left: 35px;
+        margin-top: 15px;
+        width: 81%;
+        height: 56px;
+        border: none;
+        color: white;
+        background-color: #6666ff;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+      }
+      .all-input {
+        outline: none;
+      }
+      .side-sec{
+        margin-left: 50%;
+        margin-top: -40%;
+        justify-content: center;
+        text-align: center;
+        font-family: "Josefin Sans";
+      }
+      .side-sec h1{
+        padding-top: 20px;
+        color: #6666ff;
+      }
+      .saim-sec{
+        padding-top: 10px;
+        color: rgb(71, 70, 70);
+        font-size: 20px !important;
+      }
+      .side-sec p{
+        padding-top: 20px;
+        font-size: 17px;
+      }
+      .side-p{
+        color: rgb(174, 168, 168);
+      }
+      .f-sec{
+        margin-top: 50px !important;
+      }
+      .expert-sec{
+        width: 100%;
+        height: 450px;
+        background-color: rgb(236, 236, 240);
+        margin-top: 14%;
+        text-align: center;
+      }
+      .expert-sec h1{
+        padding-top: 20px;
+        font-size: 37px;
+        color: #6666ff;
+        font-family: "Zilla Slab";
+      }
+      .expert-sec p{
+        color: rgb(142, 140, 140); 
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .expert-sec img{
+        border-radius: 50%;
+        width: 13%;
+        margin-top: 70px;
+      }
+      .pm{
+        margin-left: 40px;
+      }
+      .im{
+        margin-left: 160px;
+      }
+      .hm{
+        margin-left: 160px;
+      }
+      .um{
+        margin-left: 170px;
+      }
+      /*   t e x t   -   s e c   */
+      .first-h1{
+        margin-top: -106px ;
+        padding-left: 90px;
+        color: black;
+      }
+      .first-p{
+        padding-left: 120px;
+        padding-top: 30px;
+      }
+      .sec-h1{
+        margin-left: 32%;
+        margin-top: -80px;
+      }
+      .sec-p{
+        margin-left: 35%;
+        padding-top: 30px;
+      }
+      .th-h1{
+        margin-left: 60%;
+        margin-top: -70px;
+      }
+      .th-p{
+        margin-left: 62%;
+        padding-top: 30px;
+      }
+      .for-h1{
+        margin-left: 86.5%;
+        margin-top: -80px;
+      }
+      .for-p{
+        margin-left: 88%;
+        padding-top: 30px;
+      }
+      .all-text h1{
+        font-family: "Josefin Sans";
+      }
+      .all-text h1:hover{
+        color: #ff99e6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="first">
+        <i class="fa-solid fa-envelope-open-text"></i>
+        <p>info@domain.net</p>
+      </div>
+      <div class="mid">
+        <img src="img/logo1.png" alt="" />
+      </div>
+      <div class="second">
+        <i class="fa-solid fa-phone"></i>
+        <p>+00.1234.567891</p>
+      </div>
+      <hr/>
+      <div class="un-sec">
+        <h1>Be peaceful in mind and healthy in Body!</h1>
+        <p>
+          At solmen va esser necessi fa uniform grammatica, pronunciation plu
+          sommun paroles.
+        </p>
+        <button>Join us now</button>
+      </div>
+    </header>
+    <section class="type">
+      <h1 class="type1">Your Natural of Yoga</h1>
+      <p class="type2">
+        Yoga is a mind and body practice with origins in ancient Indian
+        philosophy
+      </p>
+      <div class="main">
+        <div class="png1">
+          <img src="img/flower.png" alt="" />
+          <h1>Choose the class</h1>
+          <p>
+            It va esser tam simplic quam Occidental in fact, it va esser
+            Occidental.
+          </p>
+        </div>
+        <div class="png2">
+          <img src="img/mind-soul.png" alt="" />
+          <h1>Workout Routines</h1>
+          <p>
+            It va esser tam simplic quam Occidental in fact, it va esser
+            Occidental.
+          </p>
+        </div>
+        <div class="png3">
+          <img src="img/flower.png" alt="" />
+          <h1>Yoga challenge</h1>
+          <p>
+            It va esser tam simplic quam Occidental in fact, it va esser
+            Occidental.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="center-sec"></div>
+      <div class="sec-sec">
+        <h1>The Best Class for your Yoga Center</h1>
+        <p>
+          At solmen li esser necessi uniform grammatica, pronunciation sommun
+          paroles, quande li coalingue simplic regulari quam coalescent lingues
+        </p>
+        <ul>
+          <li><p>Vivamus semper odio in nibh ultricies</p></li>
+          <li><p>Nam gravida magna vitae ante dignissim</p></li>
+          <li><p>Duis rhoncus lectus at velit hendrerit quis</p></li>
+        </ul>
+        <p id="p1">
+          Necessi uniform grammatica, pronunciation sommun paroles, quande li
+          coalingue simplic regulari coalescent lingues.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="ad-sec">
+        <h1>Advantages of Yoga</h1>
+        <p>At solmen li esser necessi uniform grammatica, pronunciation</p>
+      </div>
+      <div class="girl-sec">
+        <img src="img/advantages-of-yoga.jpg" alt="" />
+      </div>
+      <div class="mind-sec">
+        <h1>Mind and soul</h1>
+        <p>
+          A un Angleso semblar un simplificat Angles, quam un skepticbridge.
+        </p>
+      </div>
+      <div class="good-sec">
+        <h1>Good for health</h1>
+        <p>
+          A un Angleso semblar un simplificat Angles, quam un skepticbridge.
+        </p>
+      </div>
+      <div class="and-sec">
+        <h1>Meditation classes</h1>
+        <p>
+          A un Angleso semblar un simplificat Angles, quam un skepticbridge.
+        </p>
+      </div>
+      <div class="real-sec">
+        <h1>Relaxation and Refresh</h1>
+        <p>
+          A un Angleso semblar un simplificat Angles, quam un skepticbridge.
+        </p>
+      </div>
+      <div class="you-sec">
+        <h1>Yoga for real energy</h1>
+        <p>
+          A un Angleso semblar un simplificat Angles, quam un skepticbridge.
+        </p>
+      </div>
+      <div class="class-sec">
+        <h1>Renewing your mind</h1>
+        <p>
+          A un Angleso semblar un simplificat Angles, quam un skepticbridge.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="our-sec">
+        <h1>Our Yoga Classes</h1>
+        <p>At solmen li esser necessi uniform grammatica, pronunciation</p>
+      </div>
+      <main class="all-sec">
+        <div class="a-sec">
+          <img src="img/kundalini-yoga.jpg" alt="" />
+          <h1>Kundalini Yoga</h1>
+          <p>Li Europan lingues membres del sam familie.</p>
+        </div>
+        <div class="b-sec">
+          <img src="img/basic-yoga.jpg" alt="" />
+          <h1>Basic Yoga</h1>
+          <p>Li Europan lingues membres del sam familie.</p>
+        </div>
+        <div class="c-sec">
+          <img src="img/iyengar-yoga.jpg" alt="" />
+          <h1>Iyengar Yoga</h1>
+          <p>Li Europan lingues membres del sam familie.</p>
+        </div>
+        <div class="d-sec">
+          <img src="img/lance-begrol.jpg" alt="" />
+          <h1>Advanced Yoga</h1>
+          <p>Li Europan lingues membres del sam familie.</p>
+        </div>
+      </main>
+    </section>
+    <section>
+      <div class="form-sec">
+        <h1>FORM & TIME SCHEDULE</h1>
+        <p>At solmen li esser necessi uniform grammatica, pronunciation</p>
+        <div class="make-sec">
+          <h1>Make An Appiontment</h1>
+          <p>
+            At solmen va esser necessi far uniform grammatica, pronunciation e
+            plu sommun paroles.
+          </p>
+          <div class="all-input">
+            <div class="ai">
+              <input type="text" placeholder="First name*" id="ai" />
+            </div>
+            <div class="bi">
+              <input type="text" placeholder="Last name*" id="bi" />
+            </div>
+            <div class="ci">
+              <input type="date" id="ci" />
+            </div>
+            <div class="di">
+              <input type="text" placeholder="Choose Class*" id="di" />
+            </div>
+            <div class="ei">
+              <input type="text" placeholder="Phone" id="ei" />
+            </div>
+            <div class="fi">
+              <input type="text" placeholder="Email" id="fi" />
+            </div>
+            <div class="mi">
+              <textarea
+                name=""
+                placeholder="Message (Optional)"
+                id="mi"
+              ></textarea>
+            </div>
+          </div>
+          <button class="fb">Book An Appointment</button>
+        </div>
+      </div>
+      <div class="side-sec">
+        <h1>Weekdays</h1>
+        <p class="saim-sec">06.00 AM - 07.00 AM</p>
+        <p class="side-p">kundalini meditation beginners for Yoga</p>
+        <p class="saim-sec">07.00 AM - 08.30 AM</p>
+        <p class="side-p">Surya Namaskar & Advanced Meditation</p>
+        <div class="f-sec">
+        <h1>Weekends</h1>
+        <p class="saim-sec">05.00 AM - 07.00 AM</p>
+        <p class="side-p">Weekly Pratice with children Yoga</p>
+        <p class="saim-sec">08.00 AM - 10.00 AM</p>
+        <p class="side-p">Advanced Meditation & Healthy Recipes</p>
+      </div>
+      </div>
+    </section>
+    <section>
+      <div class="expert-sec">
+        <h1>Expert Trainers</h1>
+        <p>At solmen li esser necessi uniform grammatica, pronunciation</p>
+        <img src="img/fig-nelson.jpg" class="pm">
+        <img src="img/jason-response.jpg" class="im">
+        <img src="img/eric-widget.jpg" class="hm">
+        <img src="img/lance-begrol.jpg" class="um">
+      </div>
+      <div class="all-text">
+        <h1 class="first-h1">Fig Nelson</h1>
+        <i><p class="first-p">Trainer</p></i>
+        <h1 class="sec-h1">Jason Response</h1>
+        <i><p class="sec-p">Yoga Basic</p></i>
+        <h1 class="th-h1">Eric Widget</h1>
+        <i><p class="th-p">Kundalm</p></i>
+        <h1 class="for-h1">Lance Bogrol</h1>
+        <i><p class="for-p">Healthy Recipes</p></i>
+      </div>
+    </section>
+  </body>
+</html>
